@@ -12,7 +12,7 @@ class Card extends Component{
 	render(){
 		//console.log(this.props)
 		let {name, up, style, index,isDragging,location} = this.props
-	    let img = require("../../images/PNG/"+name+".png")
+	    let img = "../../images/PNG/"+name+".png"
 	    // console.log(this.props)
 		return this.props.connectDragSource(
 				<div className = "play-card" ref = {this.props.connectDropTarget}
